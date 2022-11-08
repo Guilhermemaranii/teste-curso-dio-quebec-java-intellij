@@ -1,4 +1,4 @@
-package br.com.dio.quebec.intro.collections;
+package br.com.dio.quebec.intro.collections.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -73,12 +73,26 @@ public class ExemploList {
 
         System.out.println("Confira se a lista está vazia: " + notas.isEmpty());
 
-        /*System.out.println("Crie uma lista chamada notas2 " +
+        System.out.println("Crie uma lista chamada notas2 " +
                 "e coloque todos os elementos da list Arraylist nessa nova lista: ");
+        List<Double> notas2 = new ArrayList<Double>();
+        notas2.add(7.0d);
+        notas2.add(7.1d);
+        notas2.add(7.2d);
+        notas2.add(7.3d);
+        notas2.add(7.4d);
+        notas2.add(7.5d);
+        notas2.add(7.6d);
 
-        System.out.println("Mostre a primeira nota da nova lista sem removê-lo: ");
+        System.out.println(notas2.toString());
 
-        System.out.println("Mostre a primeira nota da nova lista removendo-o: ");
-         */
+        System.out.println("Mostre a primeira nota da nova lista sem removê-lo: " + notas2.get(0));
+
+
+       System.out.println("Mostre a primeira nota da nova lista removendo-o: " + notas2.get(0));
+        notas2.remove(0);
+        System.out.println("Nova primeira nota da nova lista: " + notas2.get(0));
+        System.out.println("Lista com a primeira nota removida"+ notas2);
+
     }
 }
